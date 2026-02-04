@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { CartProvider } from './context/CartContext';
-import { initEmailService } from './service/emailService';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Cart from './components/Cart';
-import ThemeCustomizer from './components/ThemeCustomizer';
-import Home from './pages/Home';
-import Products from './pages/products';
-import ProductDetail from './pages/ProductDetails';
-import Checkout from './pages/Checkout';
-import About from './pages/About';
-import Contact from './pages/contact';
-import AdminLogin from './pages/AdminLogin';
-import AdminDashboard from './pages/AdminDashboard';
-import ProtectedRoute from './components/ProtectedRoute';
+import { CartProvider } from './context/CartContext.js';
+import { initEmailService } from './service/emailService.js';
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
+import Cart from './components/Cart.js';
+import ThemeCustomizer from './components/ThemeCustomizer.js';
+import Home from './pages/Home.js';
+import Products from './pages/products.js';
+import ProductDetail from './pages/ProductDetails.js';
+import Checkout from './pages/Checkout.js';
+import About from './pages/About.js';
+import Contact from './pages/contact.js';
+import AdminLogin from './pages/AdminLogin.js';
+import AdminDashboard from './pages/AdminDashboard.js';
+import ProtectedRoute from './components/ProtectedRoute.js';
 
 function App() {
   const [showCart, setShowCart] = useState(false);
